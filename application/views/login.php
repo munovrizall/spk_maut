@@ -7,7 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
 
-        <title>Sistem Pendukung Keputusan Metode MAUT</title>
+        <title>SPK MAUT</title>
 
         <!-- Custom fonts for this template-->
         <link href="<?= base_url('assets/')?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -19,10 +19,10 @@
 		<link rel="icon" href="<?= base_url('assets/')?>img/favicon.ico" type="image/x-icon">
     </head>
 
-    <body class="bg-gradient-success">
+    <body class="bg-gradient-info">
         <nav class="navbar navbar-expand-lg navbar-dark bg-white shadow-lg pb-3 pt-3 font-weight-bold">
             <div class="container">
-                <a class="navbar-brand text-success" style="font-weight: 900;" href="<?= base_url('')?>"> <i class="fa fa-database mr-2 rotate-n-15"></i> Sistem Pendukung Keputusan Metode MAUT</a>
+                <a class="navbar-brand text-info" style="font-weight: 900;" href="<?= base_url('')?>"> <i class="fa fa-database mr-2 rotate-n-15"></i> Sistem Pendukung Keputusan Metode MAUT</a>
             </div>
         </nav>
 
@@ -38,7 +38,6 @@
                                     <div class="p-5">
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">Login Account</h1>
-                                            <img src="assets/img/logopnj.png" alt="" width="60%" style="margin-bottom: 15px;">
                                         </div>
 										<?php $error=$this->session->flashdata('message');
 										if($error) {?>
@@ -55,7 +54,7 @@
                                             <div class="form-group">
                                                 <input required autocomplete="off" type="password" class="form-control form-control-user" id="exampleInputPassword" name="password" placeholder="Password" />
                                             </div>
-                                            <button name="submit" type="submit" class="btn btn-success btn-user btn-block"><i class="fas fa-fw fa-sign-in-alt mr-1"></i> Masuk</button>
+                                            <button name="submit" type="submit" class="btn btn-info btn-user btn-block"><i class="fas fa-fw fa-sign-in-alt mr-1"></i> Masuk</button>
                                         </form>
                                     </div>
                                 </div>

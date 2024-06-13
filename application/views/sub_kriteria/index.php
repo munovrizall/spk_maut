@@ -10,7 +10,7 @@
 <div class="card shadow mb-4">
     <!-- /.card-header -->
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-success"><i class="fa fa-table"></i> Daftar Data Sub Kriteria</h6>
+        <h6 class="m-0 font-weight-bold text-info"><i class="fa fa-table"></i> Daftar Data Sub Kriteria</h6>
     </div>
 
     <div class="card-body">
@@ -26,9 +26,9 @@
     <!-- /.card-header -->
     <div class="card-header py-3">
         <div class="d-sm-flex align-items-center justify-content-between">
-			<h6 class="m-0 font-weight-bold text-success"><i class="fa fa-table"></i> <?= $key->keterangan." (".$key->kode_kriteria.")" ?></h6>
+			<h6 class="m-0 font-weight-bold text-info"><i class="fa fa-table"></i> <?= $key->keterangan." (".$key->kode_kriteria.")" ?></h6>
 			
-			<a href="#tambah<?= $key->id_kriteria ?>" data-toggle="modal" class="btn btn-sm btn-success"> <i class="fa fa-plus"></i> Tambah Data </a>
+			<a href="#tambah<?= $key->id_kriteria ?>" data-toggle="modal" class="btn btn-sm btn-info"> <i class="fa fa-plus"></i> Tambah Data </a>
 		</div>
     </div>
 	
@@ -63,7 +63,7 @@
     <div class="card-body">
 		<div class="table-responsive">
 			<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-				<thead class="bg-success text-white">
+				<thead class="bg-info text-white">
 					<tr align="center">						
 						<th width="5%">No</th>
 						<th>Nama Sub Kriteria</th>

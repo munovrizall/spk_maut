@@ -24,6 +24,7 @@ if($this->session->status !== ('Logged'))
 
   <!-- Custom styles for this template-->
   <link href="<?= base_url('assets/')?>css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets/')?>css/style.css" rel="stylesheet">
 
   <link href="<?= base_url('assets/')?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="<?= base_url('assets/')?>img/favicon.ico" type="image/x-icon">
@@ -36,14 +37,14 @@ if($this->session->status !== ('Logged'))
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('Login/home'); ?>">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-database"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Politeknik Negeri Jakarta</div>
+        <div class="sidebar-brand-text mx-3">SPK MAUT</div>
       </a>
 
       <!-- Divider -->
@@ -153,7 +154,7 @@ if($this->session->status !== ('Logged'))
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-		  <button id="sidebarToggleTop" class="btn text-success d-md-none rounded-circle mr-3">
+		  <button id="sidebarToggleTop" class="btn text-info d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
 

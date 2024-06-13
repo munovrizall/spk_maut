@@ -8,7 +8,7 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-success"><i class="fas fa-fw fa-edit"></i> Edit Data Profile</h6>
+        <h6 class="m-0 font-weight-bold text-info"><i class="fas fa-fw fa-edit"></i> Edit Data Profile</h6>
     </div>
 	
 	<?php echo form_open('Profile/update/'.$profile->id_user); ?>

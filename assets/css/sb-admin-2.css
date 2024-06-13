@@ -2457,14 +2457,14 @@ fieldset:disabled a.btn {
 
 .btn-success:hover {
   color: #fff;
-  background-color: #17a673;
-  border-color: #169b6b;
+  background-color: #2a93d5;
+  border-color: #125488;
 }
 
 .btn-success:focus, .btn-success.focus {
   color: #fff;
-  background-color: #17a673;
-  border-color: #169b6b;
+  background-color: #2a93d5;
+  border-color: #125488;
   box-shadow: 0 0 0 0.2rem rgba(62, 208, 156, 0.5);
 }
 
