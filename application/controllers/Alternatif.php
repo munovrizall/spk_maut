@@ -42,20 +42,17 @@
         public function store()
         {
                 $data = [
-                    'keterangan' => $this->input->post('keterangan'),
-                    'tahun' => $this->input->post('tahun'),
-                    'nik' => $this->input->post('nik'),
+                    'keterangan' => null,
+                    'tahun' => null,
+                    'nik' => null,
 					'nama' => $this->input->post('nama'),
 					'jenis_kelamin' => $this->input->post('jenis_kelamin'),
-					'departemen' => $this->input->post('departemen'),
-					'email' => $this->input->post('email'),
-					'no_telp' => $this->input->post('no_telp'),
-					'alamat' => $this->input->post('alamat'),
+					'departemen' => null,
+					'email' => null,
+					'no_telp' => null,
+					'alamat' => null,
                 ];
                 
-                // $this->form_validation->set_rules('keterangan', 'Keterangan', 'required');
-                $this->form_validation->set_rules('tahun', 'Tahun', 'required');
-                $this->form_validation->set_rules('nik', 'NIK', 'required'); 
 				$this->form_validation->set_rules('nama', 'Nama', 'required'); 
     
                 if ($this->form_validation->run() != false) {

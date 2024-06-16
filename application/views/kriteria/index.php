@@ -6,7 +6,6 @@
     <a href="<?= base_url('Kriteria/create'); ?>" class="btn btn-info"> <i class="fa fa-plus"></i> Tambah Data </a>
 </div>
 
-<?= $this->session->flashdata('message'); ?>
 
 <div class="card shadow mb-4">
     <!-- /.card-header -->

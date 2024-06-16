@@ -18,13 +18,12 @@
 	}
 </style>
 <body>
-	<img src="assets/img/pnj.png" alt="Logo PNJ" style="position: absolute; width: 70px; height: 65px;">
 	<table style="width: 100%;">
 	<tr>
-		<td align="center">
+		<td align="left">
 			<span style="line-height: 1.7; font-weight: bold;">
-		POLITEKNIK NEGERI JAKARTA
-		<br>DEPOK, INDONESIA
+		Mohammad Novrizal Sugiarto (11210930000043)
+		<br>Luthfiyyah Zharifa Fauziyyah (11210930000041)
 			</span>
 		</td>
 	</tr>
@@ -32,15 +31,13 @@
 
 <hr class="line-title">
 <p align="center">
-	LAPORAN DATA KARYAWAN <br>
+	LAPORAN DATA MAHASISWA <br>
 </p>
 
 <table border="1" width="100%">
 	<thead>
 		<tr align="center">
-			<th>Nik</th>
-			<th>Alternatif / Nama Karyawan</th>
-			<th>Departemen</th>
+			<th>Nama Mahasiswa</th>
 			<th>Nilai Preferensi</th>
 			<th width="15%">Ranking</th>
 		</tr>
@@ -50,25 +47,12 @@
 			$no=1;
 			foreach ($hasil as $keys): ?>
 		<tr align="center">
-			<td style="padding-left: 5px;">
-				<?php
-				$nim_alternatif = $this->Perhitungan_model->get_hasil_alternatif($keys->id_alternatif);
-				echo $nim_alternatif['nik'];
-				?>
-
+			
 			<td align="left" style="padding-left: 5px;">
 				<?php
 				$nama_alternatif = $this->Perhitungan_model->get_hasil_alternatif($keys->id_alternatif);
 				echo $nama_alternatif['nama'];
 				?>
-
-		<td style="padding-left: 5px;">
-				<?php
-				$jurusan_alternatif = $this->Perhitungan_model->get_hasil_alternatif($keys->id_alternatif);
-				echo $jurusan_alternatif['departemen'];
-				?>
-
-		
 			
 			</td>
 			<td><?= $keys->nilai ?></td>

@@ -4,7 +4,6 @@
     <h1 class="h3 mb-0 text-gray-800"><i class="fas fa-fw fa-cubes"></i> Data Sub Kriteria</h1>
 </div>
 
-<?= $this->session->flashdata('message'); ?>
 
 <?php if ($kriteria==NULL): ?>
 <div class="card shadow mb-4">

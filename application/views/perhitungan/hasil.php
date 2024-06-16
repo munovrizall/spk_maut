@@ -17,9 +17,7 @@
 			<table class="table table-bordered" width="100%" cellspacing="0">
 				<thead class="bg-info text-white">
 					<tr align="center">
-						<th>Nik</th>
-						<th>Alternatif / Nama Karyawan</th>
-						<th>Departemen</th>
+						<th>Nama Mahasiswa</th>
 						<th>Nilai Preferensi</th>
 						<th width="15%">Ranking</th>
 					</tr>
@@ -29,13 +27,6 @@
 						$no=1;
 						foreach ($hasil as $keys): ?>
 					<tr align="center">
-						<td>
-							<?php
-							$nim_alternatif = $this->Perhitungan_model->get_hasil_alternatif($keys->id_alternatif);
-							echo $nim_alternatif['nik'];
-							?>
-						
-						</td>
 
 						<td align="left" style="padding-left: 5px;">
 				
@@ -46,14 +37,6 @@
 
 						</td>
 
-						<td style="padding-left: 5px;">
-						
-							<?php
-							$jurusan_alternatif = $this->Perhitungan_model->get_hasil_alternatif($keys->id_alternatif);
-							echo $jurusan_alternatif['departemen'];
-							?>
-
-						</td>
 						<td><?= $keys->nilai ?></td>
 						<td><?= $no; ?></td>
 					</tr>
